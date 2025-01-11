@@ -1,0 +1,199 @@
+body { 
+    font-family: Arial, sans-serif; 
+    background-color: #3434; 
+    margin: 0; 
+    padding: 0; 
+} 
+
+header { 
+    background-image: linear-gradient(to right, #e015d6, #f5c938);
+    color: white; 
+    padding: 10px 0; 
+    text-align: center; 
+} 
+
+header .menu1 {
+    display: flex;
+}
+
+header img  {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding: 10px 10px;
+}
+
+nav { 
+    position: relative;  
+    padding: 10px;
+
+    margin: 0;   
+    font-size: 22px;
+
+} 
+
+header button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    
+    text-align: center;
+}
+
+header button:hover { 
+    background-color: #575757; 
+} 
+
+.search-box { 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: fit-content; /* Ajusta a largura conforme o conteúdo */       
+
+
+    display: flex; 
+    align-items: center; /* Centraliza verticalmente */ 
+    height: 0;
+} 
+
+.search-box input[type="text"] { 
+    width: 30pc;
+    height: 25px;
+    padding: 5px; 
+    font-size: 16px; 
+    border-radius: 15px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.75);
+    transition: .5s;
+
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
+
+} 
+
+/*.search-btn{
+    text-decoration: none;
+    width: 43px;
+    height: 40px;
+    border-radius: 50%;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}*/
+
+.search-box input:hover{
+    width: 35pc;
+    transition: .5s;
+    margin-bottom: 20px;
+}
+
+.search-box input:focus + i, 
+.search-box input.focus-visible + i { 
+    display: flex; /* Exibe a lupa quando o campo está focado */ 
+    right: 437px;
+    transform: translateY(-50%);
+    transition: .5s;
+}
+
+.search-box i { 
+    border: #202020;
+    border-radius: 50%;
+    width: 43px;
+    height: 36px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+
+    position: absolute; 
+    right: 440px; 
+    top: 0;  
+    pointer-events: none; /* Faz com que a lupa não interfira na entrada de texto */ 
+    font-size: 20px; /* Tamanho da lupa */ 
+    color: #686666; /* Cor da lupa */ 
+}
+
+.account i {
+    height: 50px;
+    padding-bottom: 20px;
+    right: 10pc;
+}
+
+.content { 
+    padding: 20px; 
+    align-items: center;
+    text-align: center;
+} 
+
+.content h2 { 
+    color: #333; 
+} 
+
+.content p { 
+    color: #333; 
+} 
+
+footer { 
+    background-color: #333; 
+    color: white; 
+    text-align: center; 
+    padding: 10px 0; 
+    position: fixed; 
+    width: 100%; 
+    bottom: 0; 
+}
+
+.window { 
+    display: none; 
+    position: fixed; 
+    top: 159px; /* Altura do cabeçalho */ 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    padding: 20px; 
+    background-color: #f1f1f1; 
+    overflow-y: auto;
+}
+
+.menu-button { 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    background-color: none; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px;
+
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    
+    margin-left: 13pc; 
+    margin-right: auto;
+}
+
+.close-button { 
+    display: block; 
+    margin-bottom: 10px; 
+    padding: 10px 15px; 
+    cursor: pointer; 
+    background-color: #f44336; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+}
+
+/*Interatividade*/
+
+
+.menu-button.active { 
+    background-color: blue; 
+    color: white; 
+}
+
+.window.active { 
+    display: block; 
+}
